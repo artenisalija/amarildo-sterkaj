@@ -32,7 +32,7 @@ export function Ventures() {
               {/* Gold sheen sweep on hover */}
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-y-0 -left-1/2 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-gold-pale/40 to-transparent opacity-0 transition-all duration-1000 group-hover:left-[120%] group-hover:opacity-100"
+                className="pointer-events-none absolute inset-y-0 left-[76%] w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-gold-pale/50 to-transparent opacity-70 transition-all duration-1000 md:-left-1/2 md:opacity-0 md:group-hover:left-[120%] md:group-hover:opacity-100"
               />
 
               <div className="flex items-center justify-between gap-4">

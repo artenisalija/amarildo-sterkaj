@@ -27,11 +27,11 @@ export function Influence() {
               {/* Gold corner accent that draws on hover */}
               <span
                 aria-hidden="true"
-                className="absolute left-0 top-0 h-10 w-px bg-gold/0 transition-all duration-500 group-hover:h-14 group-hover:bg-gold/70"
+                className="absolute left-0 top-0 h-14 w-px bg-gold/60 transition-all duration-500 md:h-10 md:bg-gold/0 md:group-hover:h-14 md:group-hover:bg-gold/70"
               />
               <span
                 aria-hidden="true"
-                className="absolute left-0 top-0 h-px w-10 bg-gold/0 transition-all duration-500 group-hover:w-14 group-hover:bg-gold/70"
+                className="absolute left-0 top-0 h-px w-14 bg-gold/60 transition-all duration-500 md:w-10 md:bg-gold/0 md:group-hover:w-14 md:group-hover:bg-gold/70"
               />
 
               <span className="font-serif text-sm italic text-platinum-deep" aria-hidden="true">

@@ -16,6 +16,16 @@ export function Process() {
         />
 
         <div className="relative mt-24">
+          {/* Mobile journey line, matching the desktop connector without crowding the text. */}
+          <motion.div
+            aria-hidden="true"
+            initial={{ scaleY: 0 }}
+            whileInView={{ scaleY: 1 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute bottom-0 left-7 top-0 w-px origin-top bg-gradient-to-b from-gold/50 via-platinum to-platinum/20 lg:hidden"
+          />
+
           {/* Connecting line, drawn on scroll */}
           <motion.div
             aria-hidden="true"
@@ -34,9 +44,9 @@ export function Process() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.8, delay: 0.15 * i, ease: [0.22, 1, 0.36, 1] }}
-                className="relative"
+                className="relative pl-24 lg:pl-0"
               >
-                <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border border-gold/50 bg-ivory-soft">
+                <div className="absolute left-0 top-0 z-10 flex h-14 w-14 items-center justify-center rounded-full border border-gold/50 bg-ivory-soft shadow-(--shadow-btn-ghost) lg:relative">
                   <span className="font-serif text-lg italic text-gold">{step.number}</span>
                 </div>
                 <h3 className="mt-7 font-serif text-2xl font-normal leading-snug text-charcoal">

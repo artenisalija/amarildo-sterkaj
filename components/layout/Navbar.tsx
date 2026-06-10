@@ -91,9 +91,26 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
-            className="fixed inset-0 top-20 z-40 bg-ivory lg:hidden"
+            className="fixed inset-0 top-20 z-40 overflow-hidden bg-gradient-to-b from-ivory via-ivory-soft to-ivory lg:hidden"
           >
-            <ul className="container-lux flex flex-col gap-2 pt-10">
+            <span
+              aria-hidden="true"
+              className="absolute -right-28 -top-24 h-80 w-80 rounded-full bg-champagne/70 blur-3xl"
+            />
+            <span
+              aria-hidden="true"
+              className="absolute -bottom-28 -left-28 h-72 w-72 rounded-full bg-platinum/35 blur-3xl"
+            />
+            <span
+              aria-hidden="true"
+              className="absolute right-8 top-24 h-32 w-32 rounded-full border border-gold-soft/45"
+            />
+            <span
+              aria-hidden="true"
+              className="absolute bottom-28 left-10 h-px w-48 -rotate-12 bg-gradient-to-r from-transparent via-gold-soft/60 to-transparent"
+            />
+
+            <ul className="container-lux relative z-10 flex flex-col gap-2 pt-10">
               {[...links, { label: "Contact", href: "/#contact" }].map((link, i) => (
                 <motion.li
                   key={link.label}

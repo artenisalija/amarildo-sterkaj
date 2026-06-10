@@ -20,7 +20,7 @@ export function JourneyPath() {
   });
 
   return (
-    <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-[5] hidden overflow-hidden lg:block">
+    <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 z-[5] w-16 overflow-hidden opacity-60 sm:w-24 lg:inset-0 lg:w-full lg:opacity-100">
       <svg
         className="h-full w-full"
         viewBox="0 0 100 1000"
