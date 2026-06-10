@@ -18,7 +18,7 @@ export function Journal() {
     .slice(0, 3);
 
   return (
-    <section id="journal" aria-label="From the journal" className="scroll-mt-20 bg-ivory-soft py-32 md:py-44">
+    <section id="journal" aria-label="From the journal" className="scroll-mt-20 bg-gradient-to-b from-champagne/60 to-champagne-deep/20 py-32 md:py-44">
       <div className="container-lux">
         <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
           <SectionHeading

@@ -18,7 +18,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" aria-label="Contact" className="scroll-mt-20 bg-ivory py-32 md:py-44">
+    <section id="contact" aria-label="Contact" className="scroll-mt-20 bg-gradient-to-br from-ivory via-champagne-deep/25 to-ivory py-32 md:py-44">
       <div className="container-lux grid gap-20 lg:grid-cols-2 lg:gap-28">
         <div>
           <Reveal>
@@ -64,7 +64,7 @@ export function Contact() {
         </div>
 
         <Reveal delay={0.2}>
-          <div className="border border-platinum/40 bg-ivory-soft/60 p-8 shadow-(--shadow-lux) md:p-12">
+          <div className="border border-platinum/60 bg-gradient-to-br from-ivory to-champagne/30 p-8 shadow-md md:p-12">
             <AnimatePresence mode="wait">
               {submitted ? (
                 <motion.div
@@ -131,7 +131,7 @@ export function Contact() {
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.985 }}
                     transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                    className="mt-2 bg-gradient-to-b from-gold-soft via-gold to-gold px-9 py-4 text-[0.8125rem] font-medium uppercase tracking-[0.22em] text-ivory shadow-(--shadow-btn) ring-1 ring-inset ring-platinum/40 transition-all duration-500 hover:from-charcoal hover:via-charcoal hover:to-charcoal hover:shadow-(--shadow-btn-hover)"
+                    className="mt-2 bg-gradient-to-b from-gold-soft via-gold to-gold-rich px-9 py-4 text-[0.8125rem] font-medium uppercase tracking-[0.22em] text-ivory shadow-lg ring-1 ring-inset ring-platinum/50 transition-all duration-500 hover:from-charcoal-soft hover:via-charcoal hover:to-charcoal-soft hover:shadow-2xl hover:ring-gold/40"
                   >
                     Start a Private Conversation
                   </motion.button>

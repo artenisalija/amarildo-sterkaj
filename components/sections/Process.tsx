@@ -6,7 +6,7 @@ import { processSteps } from "@/lib/content";
 
 export function Process() {
   return (
-    <section id="process" aria-label="The elevation process" className="scroll-mt-20 bg-ivory-soft py-32 md:py-44">
+    <section id="process" aria-label="The elevation process" className="scroll-mt-20 bg-gradient-to-b from-champagne/50 via-champagne-deep/30 to-ivory py-32 md:py-44">
       <div className="container-lux">
         <SectionHeading
           eyebrow="The Elevation Process"
@@ -46,7 +46,7 @@ export function Process() {
                 transition={{ duration: 0.8, delay: 0.15 * i, ease: [0.22, 1, 0.36, 1] }}
                 className="relative pl-24 lg:pl-0"
               >
-                <div className="absolute left-0 top-0 z-10 flex h-14 w-14 items-center justify-center rounded-full border border-gold/50 bg-ivory-soft shadow-(--shadow-btn-ghost) lg:relative">
+                <div className="absolute left-0 top-0 z-10 flex h-14 w-14 items-center justify-center rounded-full border border-gold/50 bg-ivory-soft shadow-sm lg:relative">
                   <span className="font-serif text-lg italic text-gold">{step.number}</span>
                 </div>
                 <h3 className="mt-7 font-serif text-2xl font-normal leading-snug text-charcoal">

@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  /* ── Palette: platinum & gold in a light-mode environment ── */
+  /* ── Palette: platinum & gold, richer depth ── */
   --color-ivory: #fbf8f2;
-  --color-ivory-soft: #f6f1e7;
-  --color-champagne: #ece3d0;
-  --color-champagne-deep: #ddcfb2;
-  --color-platinum: #c9ccd1;
-  --color-platinum-deep: #9aa0a9;
-  --color-gold: #b08d3e;
-  --color-gold-soft: #cdb277;
-  --color-gold-pale: #e9dcbd;
-  --color-charcoal: #2f2c27;
-  --color-charcoal-soft: #5d574c;
-  --color-charcoal-mist: #8a8377;
+  --color-ivory-soft: #f2ede2;
+  --color-champagne: #dccaa0;
+  --color-champagne-deep: #c9b485;
+  --color-platinum: #a0a6b0;
+  --color-platinum-deep: #7f8890;
+  --color-gold: #a67d2a;
+  --color-gold-soft: #c09848;
+  --color-gold-pale: #d4c08e;
+  --color-gold-rich: #6a5020;
+  --color-charcoal: #3d3935;
+  --color-charcoal-soft: #67605a;
+  --color-charcoal-mist: #8f8a80;
 
   /* ── Typography ── */
   --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
@@ -22,12 +23,12 @@
   /* ── Motion ── */
   --ease-lux: cubic-bezier(0.22, 1, 0.36, 1);
 
-  /* ── Shadows: soft, warm, never harsh ── */
-  --shadow-lux: 0 1px 2px rgba(47, 44, 39, 0.04), 0 12px 40px -12px rgba(47, 44, 39, 0.1);
-  --shadow-lux-hover: 0 2px 4px rgba(47, 44, 39, 0.05), 0 24px 60px -16px rgba(176, 141, 62, 0.22);
-  --shadow-btn: 0 2px 6px rgba(47, 44, 39, 0.08), 0 10px 28px -10px rgba(176, 141, 62, 0.35);
-  --shadow-btn-ghost: 0 2px 6px rgba(47, 44, 39, 0.06), 0 10px 24px -12px rgba(154, 160, 169, 0.45);
-  --shadow-btn-hover: 0 4px 10px rgba(47, 44, 39, 0.1), 0 18px 40px -12px rgba(176, 141, 62, 0.4);
+  /* ── Shadows: warm and commanding ── */
+  --shadow-lux: 0 2px 4px rgba(42, 38, 34, 0.08), 0 14px 44px -12px rgba(42, 38, 34, 0.12);
+  --shadow-lux-hover: 0 4px 8px rgba(42, 38, 34, 0.1), 0 28px 72px -14px rgba(166, 141, 56, 0.28);
+  --shadow-btn: 0 3px 8px rgba(42, 38, 34, 0.1), 0 14px 36px -8px rgba(166, 141, 56, 0.35);
+  --shadow-btn-ghost: 0 2px 6px rgba(42, 38, 34, 0.08), 0 12px 28px -10px rgba(137, 147, 159, 0.45);
+  --shadow-btn-hover: 0 5px 12px rgba(42, 38, 34, 0.12), 0 24px 56px -10px rgba(166, 141, 56, 0.4);
 }
 
 html {
@@ -42,7 +43,7 @@ html {
 
 body {
   background-color: var(--color-ivory);
-  color: var(--color-charcoal);
+  color: #3d3935;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -94,34 +95,34 @@ body {
     );
   }
 
-  /* Metallic text — warm gold with a platinum highlight that glides
-     slowly across the letters, like light moving over polished metal */
+  /* Metallic text — deep gold with a bright platinum flash that races
+     across the letters. More dynamic, more powerful. */
   .text-gilded {
     background: linear-gradient(
       110deg,
-      #8a6c2a 0%,
-      #c8a857 30%,
-      #ecd9a6 42%,
-      #e8e9ec 48%,
-      #b9bdc4 52%,
-      #ecd9a6 58%,
-      #c8a857 70%,
-      #8a6c2a 100%
+      #6a5219 0%,
+      #9d7e2a 28%,
+      #d4c39c 40%,
+      #f0f1f5 48%,
+      #a9b0ba 52%,
+      #d4c39c 60%,
+      #9d7e2a 72%,
+      #6a5219 100%
     );
-    background-size: 250% auto;
+    background-size: 280% auto;
     background-position: 0% center;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: gilded-sheen 7s ease-in-out infinite alternate;
+    animation: gilded-sheen 5.5s cubic-bezier(0.42, 0, 0.58, 1) infinite alternate;
   }
 
   @keyframes gilded-sheen {
     from {
-      background-position: 0% center;
+      background-position: -40% center;
     }
     to {
-      background-position: 100% center;
+      background-position: 140% center;
     }
   }
 

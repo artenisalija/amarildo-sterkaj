@@ -66,7 +66,7 @@ export function Navbar() {
         <div className="hidden lg:block">
           <Link
             href="/#contact"
-            className="border border-gold/60 bg-ivory/60 px-6 py-2.5 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-gold shadow-(--shadow-btn-ghost) transition-all duration-500 hover:bg-gold hover:text-ivory hover:shadow-(--shadow-btn-hover)"
+            className="border-2 border-gold bg-ivory/70 px-6 py-2.5 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-gold transition-all duration-500 hover:bg-gold hover:text-ivory"
           >
             Work With Amarildo
           </Link>

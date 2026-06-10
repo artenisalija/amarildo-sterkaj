@@ -19,7 +19,7 @@ export function SectionHeading({ eyebrow, title, align = "left", className = "" 
           {align === "center" && <span className="inline-block h-px w-10 bg-gold/60" aria-hidden="true" />}
         </span>
       </Reveal>
-      <Reveal delay={0.1} as="h2" className="max-w-3xl font-serif text-4xl font-light leading-[1.12] text-charcoal md:text-5xl lg:text-6xl">
+      <Reveal delay={0.1} as="h2" className="max-w-3xl font-serif text-5xl font-light leading-[1.1] text-charcoal md:text-6xl lg:text-7xl">
         {title}
       </Reveal>
     </div>

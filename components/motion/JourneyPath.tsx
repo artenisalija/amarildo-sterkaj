@@ -39,7 +39,7 @@ export function JourneyPath() {
           </linearGradient>
         </defs>
 
-        {/* Faint full route, always visible as a whisper of where the path leads */}
+        {/* Full route, always visible — more prominent guide */}
         <path
           d="M 50 0
              C 50 30, 5 55, 5 100
@@ -50,13 +50,13 @@ export function JourneyPath() {
              S 95 725, 95 785
              S 8 865, 50 935
              L 50 1000"
-          stroke="#c9ccd1"
-          strokeOpacity="0.22"
-          strokeWidth="1.5"
+          stroke="#a9b0ba"
+          strokeOpacity="0.35"
+          strokeWidth="2"
           vectorEffect="non-scaling-stroke"
         />
 
-        {/* The drawn journey, revealed by scroll */}
+        {/* The drawn journey, revealed by scroll — more vibrant */}
         <motion.path
           d="M 50 0
              C 50 30, 5 55, 5 100
@@ -68,8 +68,8 @@ export function JourneyPath() {
              S 8 865, 50 935
              L 50 1000"
           stroke="url(#journey-gradient)"
-          strokeOpacity="0.45"
-          strokeWidth="2"
+          strokeOpacity="0.65"
+          strokeWidth="2.5"
           strokeLinecap="round"
           vectorEffect="non-scaling-stroke"
           style={{ pathLength }}

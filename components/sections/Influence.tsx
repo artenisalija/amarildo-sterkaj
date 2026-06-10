@@ -6,7 +6,7 @@ import { influenceAreas } from "@/lib/content";
 
 export function Influence() {
   return (
-    <section id="influence" aria-label="Areas of influence" className="scroll-mt-20 bg-ivory py-32 md:py-44">
+    <section id="influence" aria-label="Areas of influence" className="scroll-mt-20 bg-gradient-to-br from-ivory via-ivory to-champagne-deep/35 py-32 md:py-44">
       <div className="container-lux">
         <SectionHeading
           eyebrow="Areas of Influence"
@@ -22,7 +22,7 @@ export function Influence() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.8, delay: 0.08 * (i % 3), ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ y: -6 }}
-              className="group relative border border-platinum/40 bg-ivory p-10 shadow-(--shadow-lux) transition-shadow duration-500 hover:shadow-(--shadow-lux-hover)"
+              className="group relative border border-platinum/60 bg-gradient-to-br from-ivory to-champagne/20 p-10 shadow-md transition-all duration-500 hover:border-gold/50 hover:shadow-lg hover:bg-gradient-to-br hover:from-ivory hover:to-champagne/35"
             >
               {/* Gold corner accent that draws on hover */}
               <span

@@ -28,9 +28,9 @@ export default function BlogPage() {
   const rest = posts.filter((post) => post.slug !== featured.slug);
 
   return (
-    <main className="bg-ivory">
+    <main className="bg-gradient-to-b from-ivory via-ivory to-champagne-deep/20">
       {/* Journal masthead */}
-      <header className="border-b border-platinum/40 bg-ivory-soft pb-20 pt-44">
+      <header className="border-b border-platinum/50 bg-gradient-to-b from-ivory to-champagne/30 pb-20 pt-44">
         <div className="container-lux text-center">
           <Reveal>
             <span className="eyebrow flex items-center justify-center gap-4">
@@ -53,7 +53,7 @@ export default function BlogPage() {
       </header>
 
       {/* Featured essay */}
-      <section aria-label="Featured essay" className="border-b border-platinum/30 py-20 md:py-28">
+      <section aria-label="Featured essay" className="border-b border-platinum/50 bg-gradient-to-br from-ivory to-champagne/20 py-20 md:py-28">
         <div className="container-lux">
           <Reveal>
             <Link href={`/blog/${featured.slug}`} className="group grid gap-10 lg:grid-cols-12 lg:items-center">
@@ -84,12 +84,12 @@ export default function BlogPage() {
       </section>
 
       {/* Essay index */}
-      <section aria-label="All essays" className="py-20 md:py-28">
+      <section aria-label="All essays" className="bg-gradient-to-b from-champagne/20 to-ivory py-20 md:py-28">
         <div className="container-lux">
-          <ul className="grid gap-px overflow-hidden border border-platinum/30 bg-platinum/30 md:grid-cols-2 lg:grid-cols-3">
+          <ul className="grid gap-px overflow-hidden border border-platinum/50 bg-platinum/40 md:grid-cols-2 lg:grid-cols-3">
             {rest.map((post, i) => (
-              <Reveal key={post.slug} as="li" delay={0.08 * (i % 3)} className="bg-ivory">
-                <Link href={`/blog/${post.slug}`} className="group flex h-full flex-col p-9 transition-colors duration-500 hover:bg-ivory-soft">
+              <Reveal key={post.slug} as="li" delay={0.08 * (i % 3)} className="bg-gradient-to-br from-ivory to-champagne/15">
+                <Link href={`/blog/${post.slug}`} className="group flex h-full flex-col p-9 transition-all duration-500 hover:bg-gradient-to-br hover:from-ivory hover:to-champagne/30">
                   <div className="flex items-center justify-between text-[0.65rem] font-medium uppercase tracking-[0.2em]">
                     <span className="text-gold">{post.category}</span>
                     <span className="text-charcoal-mist">{post.readTime}</span>

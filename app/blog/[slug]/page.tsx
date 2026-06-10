@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   };
 
   return (
-    <main className="bg-ivory">
+    <main className="bg-gradient-to-b from-ivory via-ivory to-champagne-deep/20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               </Reveal>
             ))}
 
-            <Reveal as="blockquote" className="my-14 border-l-2 border-gold/60 py-2 pl-8">
+            <Reveal as="blockquote" className="my-14 border-l-4 border-gold/80 bg-champagne/20 py-4 pl-8">
               <p className="font-serif text-2xl font-light italic leading-relaxed text-charcoal md:text-3xl">
                 {post.pullQuote}
               </p>

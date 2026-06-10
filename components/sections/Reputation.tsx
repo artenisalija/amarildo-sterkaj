@@ -4,7 +4,7 @@ import { testimonials } from "@/lib/content";
 
 export function Reputation() {
   return (
-    <section id="reputation" aria-label="Reputation" className="scroll-mt-20 bg-ivory-soft py-32 md:py-44">
+    <section id="reputation" aria-label="Reputation" className="scroll-mt-20 bg-gradient-to-b from-champagne-deep/50 to-ivory py-32 md:py-44">
       <div className="container-lux">
         <SectionHeading
           eyebrow="Reputation"
