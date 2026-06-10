@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 
 const ease = [0.22, 1, 0.36, 1] as const;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export function Hero() {
   return (
@@ -15,7 +16,7 @@ export function Hero() {
     >
       {/* Full-screen portrait image — aligned to top to show face clearly */}
       <Image
-        src="/amarildo-scaled.jpg"
+        src={`${basePath}/amarildo-scaled.jpg`}
         alt="Amarildo Sterkaj — Investor, Strategist, Builder"
         fill
         priority
